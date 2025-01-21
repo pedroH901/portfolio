@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="inicio">
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#contatto">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="Quem eu sou">
+  <h1>Quem eu sou</h1>
+  <p>Meu nome é <strong>Pedro</strong> e sou um desenvolvedor.</p>
+  <p>Desde cedo venho estudando na área de TI e sempre fui muito interessado por tecnologia. Estou sempre estudando linguagens de programação como um todo, sempre querendo aperfeiçoar o que eu já sei.</p>
+  <p>Estou estudando na escola técnica <strong>SENAI Morvan Figueiredo</strong></p>
+  <p>Enquanto lia "Os segredos da mente milionária", me deparei com uma frase que achei muito interessante:</p>
+  <p>"Não seja um sabe-tudo, seja um aprenda-tudo".</p>
+</section>
+
+<div class="habilidades">
+  <h1>Habilidades</h1>
+  <section id="HTML"><h3>HTML5</h3>
+    <p>A primeira linguagem front-end que eu comecei a aprender quando iniciei no SENAI. <br>Tenho bastante habilidade com a linguagem depois de vários projetos fortificando minha experiência nela.</p>
+  </section>
+  <section id="CSS"><h3>CSS3</h3>
+    <p>Logo após o HTML, comecei a aprender CSS. <br>Com o tempo, fui aprimorando minhas habilidades e hoje consigo fazer layouts responsivos e animações.</p>
+  </section>
+  <section id="JS"><h3>JavaScript</h3>
+    <p>Estive muito animado para aprender essa linguagem, e não me arrependi. <br>Com ela, consigo fazer sites mais dinâmicos e interativos.</p>
+  </section>
+  <section id="Python"><h3>Python</h3>
+    <p>A segunda linguagem back-end que eu comecei a estudar. Fácil de usar e consegue fazer quase de tudo.</p>
+  </section>
+  <section id="Java"><h3>Java</h3>
+    <p>A primeira linguagem back-end que eu comecei a estudar e minha primeira experiência nessa área.<br> Apesar de ter começado por uma das linguagens mais complexas, ainda mantive o interesse nessa área e consegui o certificado pela UDEMY.</p>
+  </section>
+<button id="show-more-skills">Tem mais!</button>
+<div id="more-skills-list" style="display: none;">
+  <ul>
+    <li>Application Programming Interface (API)</li>
+    <li>BigQuery</li>
+    <li>Cloud computing</li>
+    <li>Cloud infrastructure</li>
+    <li>Cloud security</li>
+    <li>Cloud storage</li>
+    <li>Compute engine</li>
+    <li>Computer Network Management</li>
+    <li>Data ingestion</li>
+    <li>Data pipelines</li>
+    <li>Data types</li>
+    <li>Debugging</li>
+    <li>Digital Transformation</li>
+    <li><strong>Google Cloud Platform</strong></li>
+    <li>Identity access management (IAM)</li>
+    <li>Information Policy</li>
+    <li>Interaction Design</li>
+    <li>Internet of Things (IoT)</li>
+    <li>Kubernetes</li>
+    <li><strong>Machine Learning (ML)</strong></li>
+    <li>Network Security</li>
+    <li>Programming Control Structures</li>
+    <li><strong>Property Management</strong></li>
+    <li>Prototyping</li>
+    <li>Pub/sub</li>
+    <li>System Monitoring</li>
+    <li>TensorFlow</li>
+    <li>Test Methods</li>
+    <p>Tudo isso pode ser visto pelo <strong><a href="https://www.credly.com/users/pedro-henrique.6628ac58" target="_blank"> meu perfil no Credly!</a></strong></p>
+
+  </ul>
+</div>
+
+<section id="ferramentas"><h1>Ferramentas</h1></section>
+
+<script>
+  document.getElementById('show-more-skills').addEventListener('click', function() {
+    var moreSkillsList = document.getElementById('more-skills-list');
+    if (moreSkillsList.style.display === 'none') {
+      moreSkillsList.style.display = 'block';
+    } else {
+      moreSkillsList.style.display = 'none';
+    }
+  });
+</script>
+</div>
+
+
+  <script></script>    
+
+</body>
+
+</html>
