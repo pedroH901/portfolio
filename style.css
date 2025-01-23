@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header#inicio {
+    background-color: #003366;
+    color: #ffffff;
+    width: 100%;
+    padding: 20px 0;
+}
+
+header#inicio nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header#inicio nav ul li {
+    margin: 0 15px;
+}
+
+header#inicio nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+header#inicio nav ul li a:hover {
+    padding: 2vh;
+    font-size: x-large;
+}
+
+.sobre-mim {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.habilidades {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.ferramentas {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
