@@ -2,18 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
 </head>
 <body>
 <header id="inicio">
+  <div id="borda-efeito"></div>
   <nav>
     <ul>
       <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#certificados">Certificados</a></li>
-      <li><a href="#contatto">Contato</a></li>
+      <li><a href="#habilidades" rel="habilidades">Habilidades</a></li>
+      <li><a href="#certificados" rel="certficados">Certificados</a></li>
+      <li><a href="#contato" rel="contato">Contato</a></li>
     </ul>
   </nav>
 </header>
@@ -45,44 +49,100 @@
   <section id="gestao-de-tempo"><h3>Gestão de Tempo</h3>
     <p>Habilidade de organizar e planejar o tempo de forma eficaz para aumentar a produtividade e cumprir prazos.</p>
   </section>
+<div class="botao-de-habilidades">
 <button id="show-more-skills">Tem mais!</button>
 <div id="more-skills-list" style="display: none;">
-  <ul>
-    <li>Application Programming Interface (API)</li>
-    <li>BigQuery</li>
-    <li>Cloud computing</li>
-    <li>Cloud infrastructure</li>
-    <li>Cloud security</li>
-    <li>Cloud storage</li>
-    <li>Compute engine</li>
-    <li>Computer Network Management</li>
-    <li>Data ingestion</li>
-    <li>Data pipelines</li>
-    <li>Data types</li>
-    <li>Debugging</li>
-    <li>Digital Transformation</li>
-    <li><strong>Google Cloud Platform</strong></li>
-    <li>Identity access management (IAM)</li>
-    <li>Information Policy</li>
-    <li>Interaction Design</li>
-    <li>Internet of Things (IoT)</li>
-    <li>Kubernetes</li>
-    <li><strong>Machine Learning (ML)</strong></li>
-    <li>Network Security</li>
-    <li>Programming Control Structures</li>
-    <li><strong>Property Management</strong></li>
-    <li>Prototyping</li>
-    <li>Pub/sub</li>
-    <li>System Monitoring</li>
-    <li>TensorFlow</li>
-    <li>Test Methods</li>
-    <p>Tudo isso pode ser visto pelo <strong><a href="https://www.credly.com/users/pedro-henrique.6628ac58" target="_blank"> meu perfil no Credly!</a></strong></p>
-
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Application Programming Interface (API)</li>
+    <li class="list-group-item">BigQuery</li>
+    <li class="list-group-item">Cloud computing</li>
+    <li class="list-group-item">Cloud infrastructure</li>
+    <li class="list-group-item">Cloud security</li>
+    <li class="list-group-item">Cloud storage</li>
+    <li class="list-group-item">Compute engine</li>
+    <li class="list-group-item">Computer Network Management</li>
+    <li class="list-group-item">Data ingestion</li>
+    <li class="list-group-item">Data pipelines</li>
+    <li class="list-group-item">Data types</li>
+    <li class="list-group-item">Debugging</li>
+    <li class="list-group-item">Digital Transformation</li>
+    <li class="list-group-item"><strong>Google Cloud Platform</strong></li>
+    <li class="list-group-item">Identity access management (IAM)</li>
+    <li class="list-group-item">Information Policy</li>
+    <li class="list-group-item">Interaction Design</li>
+    <li class="list-group-item">Internet of Things (IoT)</li>
+    <li class="list-group-item">Kubernetes</li>
+    <li class="list-group-item"><strong>Machine Learning (ML)</strong></li>
+    <li class="list-group-item">Network Security</li>
+    <li class="list-group-item">Programming Control Structures</li>
+    <li class="list-group-item"><strong>Property Management</strong></li>
+    <li class="list-group-item">Prototyping</li>  
+    <li class="list-group-item">Pub/sub</li>
+    <li class="list-group-item">System Monitoring</li>
+    <li class="list-group-item">TensorFlow</li>
+    <li class="list-group-item">Test Methods</li>
+    <p>Tudo isso pode ser visto pelo <strong><a href="https://www.credly.com/users/pedro-henrique.6628ac58" target="_blank">meu perfil no Credly!</a></strong></p>
   </ul>
 </div>
 </div>
+</div>
 
-<section class="ferramentas"><h1>Ferramentas</h1></section>
+<section class="ferramentas">
+  <h1>Ferramentas</h1>
+  <section id="figma">
+    <h3>Figma</h3>
+    <img src="path/to/figma-image.jpg" alt="Figma">
+  </section>
+  <section id="html5">
+    <h3>HTML5</h3>
+    <img src="path/to/html5-image.jpg" alt="HTML5">
+  </section>
+  <section id="css3">
+    <h3>CSS3</h3>
+    <img src="path/to/css3-image.jpg" alt="CSS3">
+  </section>
+  <section id="javascript">
+    <h3>JavaScript</h3>
+    <img src="path/to/javascript-image.jpg" alt="JavaScript">
+  </section>
+  <section id="git">
+    <h3>Git</h3>
+    <img src="path/to/git-image.jpg" alt="Git">
+  </section>
+  <section id="github">
+    <h3>Github</h3>
+    <img src="path/to/github-image.jpg" alt="Github">
+  </section>
+  <section id="nodejs">
+    <h3>Node.js</h3>
+    <img src="path/to/nodejs-image.jpg" alt="Node.js">
+  </section>
+  <section id="notion">
+    <h3>Notion</h3>
+    <img src="path/to/notion-image.jpg" alt="Notion">
+  </section>
+  <section id="trello">
+    <h3>Trello</h3>
+    <img src="path/to/trello-image.jpg" alt="Trello">
+  </section>
+  <section id="vscode">
+    <h3>Visual Studio Code</h3>
+    <img src="path/to/vscode-image.jpg" alt="Visual Studio Code">
+  </section>
+  <section id="gcp">
+    <h3>Google Cloud Platform</h3>
+    <img src="path/to/gcp-image.jpg" alt="Google Cloud Platform">
+  </section>
+  <section id="java">
+    <h3>Java</h3>
+    <img src="path/to/java-image.jpg" alt="Java">
+  </section>
+  <section id="python">
+    <h3>Python</h3>
+    <img src="path/to/python-image.jpg" alt="Python">
+  </section>
+</section>
+
 
 <script>
   document.getElementById('show-more-skills').addEventListener('click', function() {

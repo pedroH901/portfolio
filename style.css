@@ -48,7 +48,69 @@ header#inicio nav ul li a:hover {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.habilidades section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+#more-skills-list section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    animation: transition 0.5s ease;
+}
+
+#more-skills-list section:hover {
+    animation: 0.1s;
+}
+
+.botao-de-habilidades {
+    margin-right: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.botao-de-habilidades button {
+    background-color: #003366;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: shake 3s infinite;
+}
+
+.botao-de-habilidades button:hover {
+    background-color: #0055a5;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+
 
 .ferramentas {
     background-color: #f0f0f0;
