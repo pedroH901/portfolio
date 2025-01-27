@@ -142,69 +142,66 @@
 
 <section class="ferramentas">
   <h1>Ferramentas</h1>
-  <section id="figma">
-    <h3>Figma</h3>
-    <img src="path/to/figma-image.jpg" alt="Figma">
+  <div class="conteudo">
+    <section id="figma">
+      <h3>Figma</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma">
+    </section>
+      <section id="html5">
+        <h3>HTML5</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML5">
+      </section>
+      <section id="css3">
+        <h3>CSS3</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS3">
+      </section>
+      <section id="javascript">
+        <h3>JavaScript</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+      </section>
+      <section id="git">
+        <h3>Git</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git">
+      </section>
+      <section id="github">
+        <h3>Github</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github">
+      </section>
+      <section id="nodejs">
+        <h3>Node.js</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+      </section>
+      <section id="notion">
+        <h3>Notion</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion">
+      </section>
+      <section id="trello">
+        <h3>Trello</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8c/Trello_logo.svg/220px-Trello_logo.svg.png" alt="Trello">
+      </section>
+      <section id="vscode">
+        <h3>Visual Studio Code</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="Visual Studio Code">
+      </section>
+      <section id="gcp">
+        <h3>Google Cloud Platform</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Cloud_logo.svg" alt="Google Cloud Platform">
+      </section>
+      <section id="java">
+        <h3>Java</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/30/Java_programming_language_logo.svg/96px-Java_programming_language_logo.svg.png" alt="Java">
+      </section>
+      <section id="python">
+        <h3>Python</h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+      </section>
+    </div>
   </section>
-  <section id="html5">
-    <h3>HTML5</h3>
-    <img src="path/to/html5-image.jpg" alt="HTML5">
-  </section>
-  <section id="css3">
-    <h3>CSS3</h3>
-    <img src="path/to/css3-image.jpg" alt="CSS3">
-  </section>
-  <section id="javascript">
-    <h3>JavaScript</h3>
-    <img src="path/to/javascript-image.jpg" alt="JavaScript">
-  </section>
-  <section id="git">
-    <h3>Git</h3>
-    <img src="path/to/git-image.jpg" alt="Git">
-  </section>
-  <section id="github">
-    <h3>Github</h3>
-    <img src="path/to/github-image.jpg" alt="Github">
-  </section>
-  <section id="nodejs">
-    <h3>Node.js</h3>
-    <img src="path/to/nodejs-image.jpg" alt="Node.js">
-  </section>
-  <section id="notion">
-    <h3>Notion</h3>
-    <img src="path/to/notion-image.jpg" alt="Notion">
-  </section>
-  <section id="trello">
-    <h3>Trello</h3>
-    <img src="path/to/trello-image.jpg" alt="Trello">
-  </section>
-  <section id="vscode">
-    <h3>Visual Studio Code</h3>
-    <img src="path/to/vscode-image.jpg" alt="Visual Studio Code">
-  </section>
-  <section id="gcp">
-    <h3>Google Cloud Platform</h3>
-    <img src="path/to/gcp-image.jpg" alt="Google Cloud Platform">
-  </section>
-  <section id="java">
-    <h3>Java</h3>
-    <img src="path/to/java-image.jpg" alt="Java">
-  </section>
-  <section id="python">
-    <h3>Python</h3>
-    <img src="path/to/python-image.jpg" alt="Python">
-  </section>
-</section>
-
 
 <script>
   document.getElementById('show-more-skills').addEventListener('click', function() {
     var moreSkillsList = document.getElementById('more-skills-list');
-    if (moreSkillsList.style.display === 'none') {
-      moreSkillsList.style.display = 'block';
-    } else {
-      moreSkillsList.style.display = 'none';
-    }
+    $(moreSkillsList).slideToggle();
   });
 </script>
 </div>

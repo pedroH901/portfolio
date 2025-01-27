@@ -58,6 +58,8 @@ header#inicio nav ul li a:hover {
     font-size: 50px;
     font-family: "Poppins", sans-serif;
   }
+
+/* Início do uso da template */
   .vert-tab > div {
     margin-left: 15px;
     margin-right: 15px;
@@ -149,7 +151,7 @@ header#inicio nav ul li a:hover {
   .vert-tab {
     display: flex;
   }
-  
+/* Fim do uso da template */
 
 .habilidades section {
     background-color: #ffffff;
@@ -208,11 +210,51 @@ header#inicio nav ul li a:hover {
     }
 }
 
-
-
 .ferramentas {
     background-color: #f0f0f0;
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    padding: 20px 0;
+    cursor: grab;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.ferramentas section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px; /* Set a minimum width for each section */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: grab;
+}
+
+.ferramentas section:active {
+    cursor: grabbing;
+}
+
+.ferramentas section img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
 }
