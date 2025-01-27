@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
 </head>
 <body>
 <header id="inicio">
   <div id="borda-efeito"></div>
   <nav>
     <ul>
-      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#inicio" rel="sobre mim">Inicio</a></li>
       <li><a href="#habilidades" rel="habilidades">Habilidades</a></li>
       <li><a href="#certificados" rel="certficados">Certificados</a></li>
       <li><a href="#contato" rel="contato">Contato</a></li>
@@ -34,21 +33,74 @@
 
 <div class="habilidades">
   <h1>Habilidades</h1>
-  <section id="comunicacao"><h3>Comunicação</h3>
-    <p>Habilidade essencial para transmitir ideias de forma clara e eficaz, tanto verbalmente quanto por escrito.</p>
-  </section>
-  <section id="trabalho-em-equipe"><h3>Trabalho em Equipe</h3>
-    <p>Capacidade de colaborar com outros para alcançar objetivos comuns, respeitando as opiniões e habilidades de cada membro.</p>
-  </section>
-  <section id="resolucao-de-problemas"><h3>Resolução de Problemas</h3>
-    <p>Competência para identificar, analisar e resolver problemas de maneira eficiente e criativa.</p>
-  </section>
-  <section id="adaptabilidade"><h3>Adaptabilidade</h3>
-    <p>Flexibilidade para se ajustar a novas condições, desafios e mudanças no ambiente de trabalho.</p>
-  </section>
-  <section id="gestao-de-tempo"><h3>Gestão de Tempo</h3>
-    <p>Habilidade de organizar e planejar o tempo de forma eficaz para aumentar a produtividade e cumprir prazos.</p>
-  </section>
+  <section class="vertical-tabs-section">
+    <div class="container">
+      <div class="how_work_flight">
+        <div class="vert-tab">
+          <div class="recr-content active">
+            <h3>Comunicação</h3>
+            <div class="work_items_content">
+              <div class="vert_tab_image_wrrapeer">
+                <div class="vert-tab-content">
+                  <h2>01.</h2>
+                  <h4>Comunicação</h4>
+                  <p>Habilidade essencial para transmitir ideias de forma clara e eficaz, tanto verbalmente quanto por escrito.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recr-content">
+            <h3>Trabalho em Equipe</h3>
+            <div class="work_items_content">
+              <div class="vert_tab_image_wrrapeer">
+                <div class="vert-tab-content">
+                  <h2>02.</h2>
+                  <h4>Trabalho em Equipe</h4>
+                  <p>Capacidade de colaborar com outros para alcançar objetivos comuns, respeitando as opiniões e habilidades de cada membro.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recr-content">
+            <h3>Resolução de problemas</h3>
+            <div class="work_items_content">
+              <div class="vert_tab_image_wrrapeer">
+                <div class="vert-tab-content">
+                  <h2>03.</h2>
+                  <h4>Resolução de problemas</h4>
+                  <p>Competência para identificar, analisar e resolver problemas de maneira eficiente e criativa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recr-content">
+            <h3>Adaptabilidade</h3>
+            <div class="work_items_content">
+              <div class="vert_tab_image_wrrapeer">
+                <div class="vert-tab-content">
+                  <h2>04.</h2>
+                  <h4>Adaptabilidade</h4>
+                  <p>Flexibilidade para se ajustar a novas condições, desafios e mudanças no ambiente de trabalho.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recr-content">
+            <h3>Gestão de Tempo</h3>
+            <div class="work_items_content">
+              <div class="vert_tab_image_wrrapeer">
+                <div class="vert-tab-content">
+                  <h2>05.</h2>
+                  <h4>Gestão de Tempo</h4>
+                  <p>Habilidade de organizar e planejar o tempo de forma eficaz para aumentar a produtividade e cumprir prazos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
 <div class="botao-de-habilidades">
 <button id="show-more-skills">Tem mais!</button>
 <div id="more-skills-list" style="display: none;">
@@ -86,6 +138,7 @@
 </div>
 </div>
 </div>
+
 
 <section class="ferramentas">
   <h1>Ferramentas</h1>
@@ -157,7 +210,8 @@
 </div>
 
 
-  <script></script>    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 
