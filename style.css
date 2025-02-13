@@ -43,6 +43,49 @@ header#inicio nav ul li a:hover {
   border-radius: 0.93vh;
 }
 
+.sobre-mim h1 {
+  text-align: center;
+  font-size: 4.63vh;
+  color: #003366;
+}
+
+.profile-container {
+  float: right;
+  position: relative;
+  margin: 0 0 1vh 2vh;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #003366;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+  background: rgba(0, 51, 102, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-container:hover .profile-image {
+  filter: brightness(0.7);
+}
+
+.profile-container:hover .hover-text {
+  opacity: 1;
+}
+
 .habilidades {
   background-color: #f0f0f0;
   padding: 1.85vh;
