@@ -41,6 +41,13 @@ header#inicio nav ul li a:hover {
   padding: 1.85vh;
   margin: 1.85vh;
   border-radius: 0.93vh;
+  overflow: hidden; /* Add this to contain floating elements */
+}
+
+.sobre-mim::after { /* Add clearfix */
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .sobre-mim h1 {
@@ -53,37 +60,47 @@ header#inicio nav ul li a:hover {
   float: right;
   position: relative;
   margin: 0 0 1vh 2vh;
+  max-width: 300px; /* Add max-width */
+  width: 100%; /* Make it responsive */
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 100%; /* Make image responsive */
+  height: 300px; 
   object-fit: cover;
   border: 3px solid #003366;
   border-radius: 10px;
-  transition: filter 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .hover-text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #003366;
   color: white;
   opacity: 0;
   transition: opacity 0.3s ease;
   text-align: center;
-  background: rgba(0, 51, 102, 0.7);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box; /* Add this */
 }
 
 .profile-container:hover .profile-image {
-  filter: brightness(0.7);
+  transform: translateX(-20px) translateY(-20px);
 }
 
 .profile-container:hover .hover-text {
-  opacity: 1;
+  opacity: 0.9;
 }
 
 .habilidades {
